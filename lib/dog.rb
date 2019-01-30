@@ -6,12 +6,10 @@ class Dog
 def initialize(name)
   @name = name
   @@all << self
-  @@names << name
-
 end
 
 def self.all
-@@names.uniq.each {|name| puts "#{name}"} 
+puts @@all.map{|dog| dog.name}
 end
 
 
