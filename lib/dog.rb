@@ -1,15 +1,17 @@
+require 'pry'
 class Dog 
   
   @@all = [] 
   
   def initialize(name)
     @name = name 
-    @@all << self 
+    @@all << self   
   end 
   
+  
   def self.all 
-    @@all.each do |dog|
-       print "#{@name}" 
+    @@all.collect do |dog|
+     puts dog.name   
     end 
   end
   
@@ -17,8 +19,8 @@ class Dog
     @@all.clear 
   end 
   
-  def self.name 
-    @name.upcase 
+  def name 
+    @name 
   end 
   
 end 
