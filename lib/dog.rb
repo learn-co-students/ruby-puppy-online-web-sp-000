@@ -8,7 +8,9 @@ class Dog
     @@name << @name
   end
   def self.all
-    puts @@name.uniq
+    @@all.each do |object|
+      puts object.name
+    end
   end
   def self.clear_all
     @@all = []
