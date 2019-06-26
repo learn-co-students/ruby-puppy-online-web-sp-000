@@ -9,8 +9,7 @@ class Dog
   end
 
   def self.all
-    puts self.@@all
-
+    puts @@all.map{ |dog| dog.name }      #map method iterates through each dog element, in a #puts that prints each dog.name
   end
 
   def self.clear_all
