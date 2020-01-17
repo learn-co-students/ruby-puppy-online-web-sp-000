@@ -14,6 +14,8 @@ class Dog
   end
 
   def self.print_all
+    # or use map:
+    # puts @@all.map{ |dog| dog.name }
     names = []
     @@all.each do |instance|
       names << instance.name
