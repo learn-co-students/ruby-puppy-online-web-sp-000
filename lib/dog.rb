@@ -1,4 +1,4 @@
-# Add your code here
+
 @@all = []
 
 class Dog 
