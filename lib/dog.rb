@@ -1,3 +1,5 @@
+require 'pry'
+
 class Dog 
  @@all = []
    attr_accessor :name 
@@ -17,6 +19,7 @@ end
 
 def self.print_all
   @@all.each do |name|
+    binding.pry 
     puts #{name}
 end 
 end 
