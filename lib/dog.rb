@@ -1,4 +1,4 @@
-require 'pry'
+require 'byebug'
 
 class Dog 
  @@all = []
@@ -9,8 +9,8 @@ class Dog
     @@all << self 
   end  
     
-def self.all 
-  @@all 
+def self.all
+  @@all
 end 
 
 def self.clear_all()  
@@ -19,9 +19,9 @@ end
 
 def self.print_all
   @@all.each do |name|
-    binding.pry 
-    puts #{name}
+    byebug
+    puts name 
 end 
-end 
-end 
+end
+end
   
