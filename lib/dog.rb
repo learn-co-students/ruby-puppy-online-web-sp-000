@@ -20,9 +20,7 @@ class Dog
   end
 
   def self.print_all
-    puts "Pluto"
-    puts "Fido"
-    puts "Maddy"
+    puts @@all.map{ |x| x.name }
   end
 
   def save
