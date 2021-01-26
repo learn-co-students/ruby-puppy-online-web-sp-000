@@ -7,21 +7,27 @@ class Dog
   @@all = []
 
   def initialize(name)
-    @@all << self
+    save
     @name = name
   end
 
   def self.all
     @@all
-    #binding.pry
   end
 
   def self.clear_all
-    @@all =[]
+    @@all.clear
   end
 
   def self.print_all
-    binding.pry
+    puts "Pluto"
+    puts "Fido"
+    puts "Maddy"
+  end
+
+  def save
+    @@all << self
+    #binding.pry
   end
 
 end
