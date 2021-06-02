@@ -17,6 +17,7 @@ class Dog
     @@all.each do |name|
       puts Dog.new(name)
     end
+    self.print_all
   end
   
   def self.clear_all
