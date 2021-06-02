@@ -17,10 +17,11 @@ class Dog
   end
   
   def self.print_all
-    if @all.length >= 1
-    @@all.each do |name|
-      puts name
-    end
+    
+      @@all.each do |name|
+        puts name
+      end
+
   end
   
   #def save(name)
