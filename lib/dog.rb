@@ -1,3 +1,5 @@
+require 'pry'
+
 class Dog 
   
   attr_accessor :name
@@ -14,9 +16,12 @@ class Dog
   end
   
   def self.print_all
-    @@all.each do {|name| puts name}
+    @@all.each do |name|
+      puts name
     end
+    name
   end
+  
   
   
   def self.clear_all
