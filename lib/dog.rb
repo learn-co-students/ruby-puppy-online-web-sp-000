@@ -9,7 +9,6 @@ class Dog
   def initialize(name)
      @name = name
      @@all << self
-     
   end
 
   def self.all
@@ -17,12 +16,7 @@ class Dog
   end
   
   def self.print_all
-    
-      @@all.inspect
-      #@@all.each do |name|
-      #  puts name
-      #end
-
+    puts @@all.inspect
   end
   
 
