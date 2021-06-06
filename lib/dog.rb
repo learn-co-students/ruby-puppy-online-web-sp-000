@@ -18,15 +18,14 @@ class Dog
   
   def self.print_all
     
-      @@all.each do |name|
-        puts name
-      end
+      @@all.inspect
+      #@@all.each do |name|
+      #  puts name
+      #end
 
   end
   
-  #def save(name)
-  #  @@all << name 
-  #end
+
   
   def self.clear_all
     @@all.clear
