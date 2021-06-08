@@ -17,8 +17,11 @@ class Dog
   
   def self.print_all
 
-    @@all.collect {|puppy| puppy.name}
-  
+    @@all.each do |name|
+      puts @@all.inspect
+      @@all << name
+    end
+    
   end
   
   def self.clear_all
