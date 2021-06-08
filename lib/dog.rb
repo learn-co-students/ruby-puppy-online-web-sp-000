@@ -22,7 +22,7 @@ class Dog
 
     @@all.each do |name|
       puts @@all.inspect
-      
+      @@all << @name
     end
     
   end
