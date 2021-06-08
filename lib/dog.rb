@@ -21,10 +21,10 @@ class Dog
     #ObjectSpace.each_object(self)
 
     @@all.each do |name|
-      puts self.all.inspect
+      puts @@all.inspect
       
     end
-    @@all << name
+    
   end
   
   def self.clear_all
