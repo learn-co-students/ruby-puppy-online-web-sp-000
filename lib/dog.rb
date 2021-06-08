@@ -17,14 +17,8 @@ class Dog
   
   def self.print_all
 
-    
-    #ObjectSpace.each_object(self)
-
-    @@all.each do |name|
-      puts @@all.inspect
-      @@all << @name
-    end
-    
+    @@all.collect {|puppy| puppy.name}
+  
   end
   
   def self.clear_all
