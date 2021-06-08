@@ -18,20 +18,14 @@ class Dog
   def self.print_all
 
     
-    ObjectSpace.each_object(self)
-    #@@all.each do |name|
-    # puts @@all.inspect
-    #@@all << name
+    #ObjectSpace.each_object(self)
 
     @@all.each do |name|
-      puts @@all.inspect
-      @@all << name
-
+      puts self.all.inspect
+      
     end
-    
+    @@all << name
   end
-  
-
   
   def self.clear_all
     @@all.clear
