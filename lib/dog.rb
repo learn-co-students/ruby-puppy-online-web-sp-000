@@ -16,12 +16,11 @@ class Dog
   end
   
   def self.print_all
-
-    @@all.each do |name|
-      puts @@all.inspect
-      @@all << name
-    end
     
+    @@all.each do |name|
+      puts self.collect
+    end
+    @@all << name
   end
   
   def self.clear_all
